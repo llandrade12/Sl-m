@@ -1,0 +1,137 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>sl!m | beatmaker</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Botão Acessibilidade -->
+        <button id="a11y-toggle" class="a11y-toggle">
+            <i class="fas fa-universal-access"></i>
+        </button>
+
+        <!-- Navegação -->
+        <header class="header">
+            <div class="logo">
+                <span class="sl">sl!</span><span>m</span>
+            </div>
+            <nav class="nav">
+                <div class="menu-mobile">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#music">Música</a></li>
+                    <li><a href="#videos">Vídeos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Seção Hero -->
+        <section id="home" class="hero">
+            <h1><span class="sl">sl!</span>m</h1>
+            <p class="subtitle">Carti baby</p>
+            <a href="#music" class="btn pulse">OUÇA AGORA</a>
+        </section>
+
+        <!-- Player de Música -->
+        <section id="music" class="music-player">
+            <h2>ÚLTIMOS LANÇAMENTOS</h2>
+            <div class="player-container">
+                <div class="album-art">
+                    <img src="capadoalbum.png" alt="Capa do Álbum" class="vinyl">
+                </div>
+                <div class="player-controls">
+                    <div class="track-info">
+                        <h3>Isso me deixa na bruxa</h3>
+                        <p>Isso me deixa na bruxa • 2024</p>
+                    </div>
+                    <audio id="main-player" src="Sl!m - Isso Me Deixa na Bruxa!!!.mp3"></audio>
+                    <div class="progress-container">
+                        <div class="progress-bar"></div>
+                        <div class="time-display">
+                            <span class="current-time">0:00</span>
+                            <span class="duration">3:30</span>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <button class="control-btn shuffle"><i class="fas fa-random"></i></button>
+                        <button class="control-btn prev"><i class="fas fa-step-backward"></i></button>
+                        <button class="control-btn play"><i class="fas fa-play"></i></button>
+                        <button class="control-btn next"><i class="fas fa-step-forward"></i></button>
+                        <div class="volume-control">
+                            <button class="volume-btn"><i class="fas fa-volume-up"></i></button>
+                            <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="0.7">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Vídeos -->
+        <section id="videos" class="videos">
+            <h2>CLIPES OFICIAIS</h2>
+            <div class="video-grid">
+                <div class="video-item">
+                    <img src="xu.png" alt="Thumbnail do Vídeo">
+                    <div class="play-icon"><i class="fas fa-play"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulário de Contato -->
+        <section id="contact" class="contact-section">
+            <h2>FALE COM A GENTE</h2>
+            <form id="contact-form" class="contact-form" action="php/contact.php" method="POST">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Nome</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" required></textarea>
+                    <label for="message">Mensagem</label>
+                </div>
+                <button type="submit" class="submit-btn">ENVIAR</button>
+            </form>
+            <div id="form-message" class="form-message"></div>
+        </section>
+
+        <!-- Rodapé -->
+        <!-- Rodapé -->
+        
+    <footer class="footer">
+        <div class="social-links">
+            <div class="footer-logo">
+                <img src="ChatGPT Image 26 de abr. de 2025, 20_01_04.png" alt="Logo" class="logo-pequena">
+            </div>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/fukksl1m/?hl=pt" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            
+            <!-- YouTube -->
+            <a href="https://www.youtube.com/@fukkslimm" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            
+            <!-- Spotify -->
+            <a href="https://open.spotify.com/intl-pt/artist/0CcG4VDneElbflhjyoE2Xn?si=tHssHNUKQ-yV3FBrLtM68g" target="_blank" rel="noopener noreferrer" aria-label="Spotify">
+                <i class="fab fa-spotify"></i>
+            </a>
+        </div>
+        
+        <p>&copy; 2025 sl!m. Todos os direitos reservados.</p>
+    </footer>
+
+        <script src="script.js"></script>
+    </body>
+    </html>
